@@ -1,11 +1,11 @@
 #cloud-config
 scheme_version: 1
 server_url: https://<new_cluster_server_ip>:443
-token: token           # replace with the token you set when creating a new cluster
+token: jash-traf-gern           # replace with a desired token
 os:
   ssh_authorized_keys:
-  - ssh-rsa ...        # replace with your public key
-  password: p@ssword   # replace with a your password
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDhFRQVg24P2C+JPkfHRdbWkXLIqveWTBk1O5nh1DDV6N0lANRfzxKlHQnsm6SmyoiWGCUnuzvPdP6ADaOB+YWkOm54TYxoOxG1ziV13E3zMh+bvSS0OLLI+g5BLhfQv2n95DnfWaix9LOoZlawoD6KYQm6fs6oleZwDxQvuZeXCkrcOW7u1Lk/z5jlloxQLGNP5C210YsqxySQjtHXAJ8WK5DR4ThO5p+g7eAoye2cjeABJ0pwFzK1H6aYa/SwEuaVNHpKA96RCAvj2fAPXWX2Pl9LETkxhbs37XdihDaTqJQWMGMvc65RpRC4Q4D4fcbazN62czM1+12oqr9xZU2h2RC/fIEeWVEt+7sBf47TxibRsZOuxVtQxvTUfA7w0GMI0NOw4cSWFII6O2O3LqEstmklOna51qN+bye+jY2SE/Po7p2jYbocZs0pWLdLfcpivpogiZcGptqOPkYTUg72Z8dMvb49i1PDgVPrLsCHLOMTYlSVeY2W215tXfhqX161ns0TzoTkS8G7PKEmtRw+F+UIGoAvfOdBxsCDEMSaB87xbBBkeKKXlNevAJZOVjgWGEfBxoEqAXzve2ar6ldrNw7c/j/YGg1DVz1NCeIs46ILYjzd1KHFECoik6VrfV6SOHa0MpTtb+1V71QKOa5XnhjmUWjF6Aw1B5BdSxQH3w== dutka@MacBook-Pro-3.local
+  password: jash-traf-gern   # replace with a your password
   ntp_servers:
   - 0.suse.pool.ntp.org
   - 1.suse.pool.ntp.org
