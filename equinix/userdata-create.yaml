@@ -8,11 +8,19 @@ os:
   ntp_servers:
   - 0.suse.pool.ntp.org
   - 1.suse.pool.ntp.org
+  modules:
+    - kvm
+    - nvme
+    - br_netfilter
+  dns_nameservers:
+    - 8.8.8.8
+    - 1.1.1.1
 install:
   mode: create
   management_interface:
     interfaces:
     - name: enp1s0f0
+    - name: enp1s0f1
     method: dhcp
   force_efi: true
   device: /dev/sda
