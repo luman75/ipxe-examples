@@ -10,8 +10,20 @@ os:
   - 1.suse.pool.ntp.org
 install:
   mode: create
+  management_interface:
+    interfaces:
+    - name: enp1s0f0
+    method: dhcp
+  force_efi: true
   device: /dev/sda
+  data_disk: /dev/sdb
+  silent: true
   iso_url: https://releases.rancher.com/harvester/master/harvester-master-amd64.iso
+  poweroff: true
+  no_format: true
+  debug: true
   tty: ttyS1,115200n8
   vip: 139.178.72.187 # use Elastic IPs or reinstall when the Public IP is known
-  vip_mode: static
+  vip_mode: dhcp
+  force_mbr: false  
+
